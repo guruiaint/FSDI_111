@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Not Found{% endblock title %}
+
+{% block content %}
+        <h1>Oops, Wrong Turn!</h1>
+        <p>This is not the page you are looking for.</p>
+        <p>Click <a href="{{ url_for('home') }}">here</a> to go home.</p>
+        <img src="{{ url_for('static', filename='img/obi-wan.jpg', _external=True)" alt="Obi">
+{% endblock content %}
